@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="23" height="24" viewBox="0 0 23 24">
+  <g fill="none" fill-rule="evenodd" transform="translate(2)">
+    <rect width="19" height="19" y="3" stroke="#D3D3D3" stroke-width="2.84"/>
+    <rect width="19" height="5" y="3" stroke="#D3D3D3" stroke-width="2.84"/>
+    <path stroke="#D3D3D3" stroke-width="2.84" d="M.5 0L.5 5 .5 0zM6.5 0L6.5 5 6.5 0zM12.5 0L12.5 5 12.5 0z" transform="translate(3)"/>
+    <rect width="3" height="2" x="3" y="11" fill="#D3D3D3"/>
+    <rect width="3" height="2" x="3" y="14" fill="#D3D3D3"/>
+    <rect width="3" height="2" x="3" y="17" fill="#D3D3D3"/>
+    <rect width="3" height="2" x="8" y="11" fill="#D3D3D3"/>
+    <rect width="3" height="2" x="8" y="14" fill="#D3D3D3"/>
+    <rect width="3" height="2" x="8" y="17" fill="#D3D3D3"/>
+    <rect width="3" height="2" x="13" y="11" fill="#D3D3D3"/>
+    <rect width="3" height="2" x="13" y="14" fill="#D3D3D3"/>
+    <rect width="3" height="2" x="13" y="17" fill="#D3D3D3"/>
+  </g>
+</svg>

@@ -1,0 +1,15 @@
+@import "_fonts.scss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.scrollbar::-webkit-scrollbar {
+    @apply w-3 h-3;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+    @apply bg-transparent rounded-none absolute;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-color;
+}

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="55" height="54" viewBox="0 0 55 54">
+  <defs>
+    <filter id="360-tour-icon-a" width="164.9%" height="166.7%" x="-32.4%" y="-33.3%" filterUnits="objectBoundingBox">
+      <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+      <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0.317963089   0 0 0 0 0.317963089   0 0 0 0 0.317963089  0 0 0 0.5 0"/>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd" filter="url(#360-tour-icon-a)" transform="translate(9 9)">
+    <g transform="translate(.234)">
+      <ellipse cx="17.883" cy="18" fill="#000" fill-rule="nonzero" rx="17.883" ry="18"/>
+      <ellipse cx="17.883" cy="18" fill="#A38244" rx="17.883" ry="18"/>
+    </g>
+    <path fill="#FFF" fill-rule="nonzero" d="M17.9999998,14 C12.6670638,14 6.99999977,15.5097684 6.99999977,18.308495 C6.99999977,20.8087685 11.4910598,22.2202494 15.9215337,22.5415913 L15.9427841,24.6666667 L20.5346703,21.9743061 L15.8903364,19.3726035 L15.9115868,21.4765852 C11.0470629,21.1184415 8.06929978,19.5992483 8.06929978,18.308495 C8.06929978,16.772696 12.1480124,15.0618645 17.9999998,15.0618645 C23.8519871,15.0618645 27.9302476,16.772696 27.9302476,18.308495 C27.9302476,19.2621983 26.3111511,20.2814266 23.804965,20.9052608 L24.0662992,21.9348116 C27.2014055,21.1543457 28.9999998,19.8326251 28.9999998,18.308495 C28.9999998,15.5097684 23.3329358,14 17.9999998,14"/>
+  </g>
+</svg>
