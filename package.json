@@ -29,6 +29,8 @@
     "postcss-nesting": "^10.0.3",
     "sticky-js": "^1.3.0",
     "tippy.js": "^6.3.7",
+    "typeface-cormorant-garamond": "^1.1.13",
+    "typeface-dancing-script": "^1.1.13",
     "typeface-nunito": "^1.1.13",
     "typeface-poppins": "^1.1.13",
     "typeface-roboto": "^1.1.13"
