@@ -13,3 +13,71 @@
 .scrollbar::-webkit-scrollbar-thumb {
     @apply bg-color;
 }
+
+.menu-open {
+    .barMenu {
+        @apply hidden;
+    }
+    .crossMenu {
+        @apply block;
+    }
+    .mobile-menu {
+        @media(max-width: 767px) {
+            @apply block;
+        }
+        @screen md {
+            @apply hidden;
+        }
+    }
+}
+
+.land-select {
+    input[type="radio"]:checked+label {
+        @apply border-color-1 text-color-1
+    }
+}
+
+.transformer-tabs {
+    ul {
+        li {
+            a {
+                @media (max-width: 767px) {
+                    @apply hidden;
+                    &.active {
+                        @apply flex !important;
+                    }
+                }
+                @screen md {
+                    &.active {
+                        @apply bg-color-1 border-color-1 text-white;
+                    }
+                }
+            }
+        }
+        &:after {
+            content: "☰";
+            height: 68px;
+            @apply absolute right-0 top-0 flex justify-center items-center pointer-events-none z-20 w-20 text-xl text-color-13;
+            @screen md {
+                @apply hidden;
+            }
+        }
+    }
+    ul {
+        &.open {
+            li {
+                a {
+                    @media (max-width: 767px) {
+                        @apply flex;
+                    }
+                }
+            }
+        }
+    }
+    .tab-content {
+        @apply hidden !important;
+        &.active {
+            @apply flex !important
+        }
+    }
+}

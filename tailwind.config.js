@@ -2,45 +2,56 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 const plugin = require('tailwindcss/plugin');
 const colors = require('tailwindcss/colors');
 module.exports = {
-   
+
     content: [
-       
+
         'src/*.{html,js,jsx}',
         'src/**/*.{html,js,jsx}',
-        
+
     ],
     darkMode: false, // or 'media' or 'class'
     theme: {
         extend: {
             fontFamily: {
-                sans: ["'Gill Sans'", ...defaultTheme.fontFamily.sans], 
-                nunito: ["'Cormorant Garamond'", ...defaultTheme.fontFamily.sans],
-                Dancing: ["'Dancing Script'", ...defaultTheme.fontFamily.sans],
+                sans: ["'Gill Sans'", ...defaultTheme.fontFamily.sans],
+                cormorant: ["'Cormorant Garamond'", ...defaultTheme.fontFamily.sans],
+                dancing: ["'Dancing Script'", ...defaultTheme.fontFamily.sans],
             },
             colors: {
- 
+
                 'color': {
-                    DEFAULT: '#0D3A5C', // Dark Blue
-                    '1': '#980b2c', // header main-color
-                    '2': '#3c3c3b', // footer
-                    '3': '#252525', // footer-bottom              
-                    '4': '#4b4b4b', // gray
-                    '5': '#5a7c84', //house
-                    '6': '#987b48', // ads.
-                    '7': '#02497E', // Gradiant Stop
-                    '8':'#f6f6f6', //background
-                    '9':'#969696', //border
-                
+                    DEFAULT: '#0D3A5C',
+                    '1': '#980b2c',
+                    '2': '#3c3c3b',
+                    '3': '#252525',
+                    '4': '#4b4b4b',
+                    '5': '#5a7c84',
+                    '6': '#987b48',
+                    '7': '#02497E',
+                    '8': '#f6f6f6',
+                    '9': '#969696',
                     '11': '#bcbcbc',
-                 
-                    
-                 
+                    '12': '#efefef',
+                    '13': '#4e4e4e',
+                    '14': '#73866d',
+                    '15': '#5a7b84',
+                    '16': '#a28244',
+                    '17': '#9e5a4d',
+                    '18': '#eaeaea',
+                    '19': '#3b3b3a',
+
+
+
                 },
             },
 
-            boxShadow:{
-                '1':'0 0 30px 5px rgba(0, 0, 0, 0.09)',
-                '2':'1px 5px 7px rgba(0, 0, 0, 0.05)',
+            boxShadow: {
+                '1': '0 0 30px 5px rgba(0, 0, 0, 0.09)',
+                '2': '1px 5px 7px rgba(0, 0, 0, 0.05)',
+                '3': 'rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em',
+                '4': 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px',
+                '5': 'inset rgba(0, 0, 0, 0.09) 0 0 40px, rgba(0, 0, 0, 0.10) 0 0 50px',
+
             },
 
             spacing: {
@@ -83,6 +94,17 @@ module.exports = {
                 '4xl': '96rem',
             },
 
+
+            minWidth: (theme) => ({
+                ...theme('spacing'),
+            }),
+
+            minHeight: (theme) => ({
+                ...theme('spacing'),
+            }),
+
+
+
             borderWidth: {
                 '3': '3px',
                 '5': '5px',
@@ -100,12 +122,12 @@ module.exports = {
                 '5.5xl': '3.5rem',
                 '6.5xl': ['4rem', '1.10'],
 
-                '8.5xlxl': '5rem', 
+                '8.5xlxl': '5rem',
                 '7xl': '4.5rem',
-                '7.5xl':   '4.8rem', 
-                '8xl':   '3.8rem',
+                '7.5xl': '4.8rem',
+                '8xl': '3.8rem',
             },
- 
+
         },
         screens: {
             'mv': '360px',
