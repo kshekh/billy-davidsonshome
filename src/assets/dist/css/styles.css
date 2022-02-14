@@ -1897,10 +1897,6 @@ Ensure the default browser behavior of the `hidden` attribute.
         padding-right: 5rem
     }
   
-    .\32xl\:pt-20 {
-        padding-top: 5rem
-    }
-  
     .\32xl\:text-7xl {
         font-size: 4.5rem
     }
