@@ -641,8 +641,8 @@ select {
     top: 100%
 }
 
-.z-20 {
-    z-index: 20
+.z-40 {
+    z-index: 40
 }
 
 .z-10 {
@@ -711,12 +711,12 @@ select {
     height: 0px
 }
 
-.h-screen {
-    height: 100vh
+.h-10 {
+    height: 2.5rem
 }
 
-.h-7 {
-    height: 1.75rem
+.h-screen {
+    height: 100vh
 }
 
 .h-full {
@@ -725,10 +725,6 @@ select {
 
 .h-80 {
     height: 20rem
-}
-
-.h-10 {
-    height: 2.5rem
 }
 
 .max-h-screen {
@@ -751,6 +747,10 @@ select {
     width: 1rem
 }
 
+.w-10 {
+    width: 2.5rem
+}
+
 .w-6 {
     width: 1.5rem
 }
@@ -765,10 +765,6 @@ select {
 
 .w-72 {
     width: 18rem
-}
-
-.w-10 {
-    width: 2.5rem
 }
 
 .min-w-full {
@@ -791,8 +787,8 @@ select {
     max-width: 1920px
 }
 
-.max-w-5xl {
-    max-width: 64rem
+.max-w-3xl {
+    max-width: 48rem
 }
 
 .flex-1 {
@@ -1050,11 +1046,6 @@ select {
     padding-right: 1.25rem
 }
 
-.py-1 {
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem
-}
-
 .px-2 {
     padding-left: 0.5rem;
     padding-right: 0.5rem
@@ -1085,6 +1076,11 @@ select {
     padding-right: 0.75rem
 }
 
+.px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem
+}
+
 .px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem
@@ -1098,11 +1094,6 @@ select {
 .py-6 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem
-}
-
-.px-8 {
-    padding-left: 2rem;
-    padding-right: 2rem
 }
 
 .py-14 {
@@ -1146,13 +1137,13 @@ select {
     font-family: 'Cormorant Garamond', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
 }
 
-.text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem
-}
-
 .text-mi {
     font-size: .75rem
+}
+
+.text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem
 }
 
 .text-4xl {
@@ -1164,14 +1155,14 @@ select {
     font-size: 3.5rem
 }
 
-.text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem
-}
-
 .text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem
+}
+
+.text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem
 }
 
 .text-3xl {
@@ -1206,10 +1197,6 @@ select {
 
 .leading-none {
     line-height: 1
-}
-
-.leading-tight {
-    line-height: 1.25
 }
 
 .tracking-wider {
@@ -1251,6 +1238,10 @@ select {
 .text-color-4 {
     --tw-text-opacity: 1;
     color: rgb(75 75 75 / var(--tw-text-opacity))
+}
+
+.text-color-4\/80 {
+    color: rgb(75 75 75 / 0.8)
 }
 
 .text-color-2\/90 {
@@ -1352,6 +1343,10 @@ select {
     background-color: rgb(13 58 92 / var(--tw-bg-opacity))
 }
 
+.mobile-menu {
+    display: none
+}
+
 .menu-open .barMenu {
     display: none
 }
@@ -1360,14 +1355,14 @@ select {
     display: block
 }
 
-@media(max-width: 767px) {
+@media(max-width: 991px) {
 
 .menu-open .mobile-menu {
         display: block
     }
         }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
 
 .menu-open .mobile-menu {
         display: none
@@ -1410,7 +1405,8 @@ select {
                 }
 
 .transformer-tabs ul:after {
-            content: "☰";
+            content: '';
+            background:url('../img/down-angle.svg') no-repeat; background-size: 20px;
             height: 68px;
             pointer-events: none;
             position: absolute;
@@ -1419,8 +1415,10 @@ select {
             z-index: 20;
             display: flex;
             width: 5rem;
+            transform: var(--tw-transform);
             align-items: center;
             justify-content: center;
+            background-position: center;
             font-size: 1.25rem;
             line-height: 1.75rem;
             --tw-text-opacity: 1;
@@ -1434,12 +1432,17 @@ select {
     }
             }
 
-@media (max-width: 767px) {
+@media (max-width: 771px) {
 
 .transformer-tabs ul.open li a {
         display: flex
     }
                     }
+
+.transformer-tabs ul.open:after {
+    --tw-rotate: 180deg;
+    transform: var(--tw-transform)
+}
 
 .transformer-tabs .tab-content {
     display: none !important
@@ -1537,6 +1540,18 @@ select {
     opacity: 1
 }
 
+@media (min-width: 360px) {
+
+    .mv\:gap-10 {
+        gap: 2.5rem
+    }
+
+    .mv\:px-10 {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem
+    }
+}
+
 @media (min-width: 480px) {
 
     .xs\:-top-3 {
@@ -1555,6 +1570,10 @@ select {
         gap: 1rem
     }
 
+    .xs\:gap-16 {
+        gap: 4rem
+    }
+
     .xs\:p-4 {
         padding: 1rem
     }
@@ -1568,12 +1587,26 @@ select {
         padding-left: 1rem;
         padding-right: 1rem
     }
+
+    .xs\:px-16 {
+        padding-left: 4rem;
+        padding-right: 4rem
+    }
+
+    .xs\:text-xl {
+        font-size: 1.25rem;
+        line-height: 1.75rem
+    }
 }
 
 @media (min-width: 640px) {
 
     .sm\:grid {
         display: grid
+    }
+
+    .sm\:h-auto {
+        height: auto
     }
 
     .sm\:h-14 {
@@ -1584,12 +1617,12 @@ select {
         height: 15rem
     }
 
-    .sm\:w-60 {
-        width: 15rem
-    }
-
     .sm\:w-auto {
         width: auto
+    }
+
+    .sm\:w-60 {
+        width: 15rem
     }
 
     .sm\:w-72 {
@@ -1608,14 +1641,18 @@ select {
         flex-direction: row
     }
 
-    .sm\:px-10 {
-        padding-left: 2.5rem;
-        padding-right: 2.5rem
+    .sm\:gap-5 {
+        gap: 1.25rem
     }
 
-    .sm\:text-lg {
-        font-size: 1.125rem;
-        line-height: 1.75rem
+    .sm\:py-1 {
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem
+    }
+
+    .sm\:px-4 {
+        padding-left: 1rem;
+        padding-right: 1rem
     }
 }
 
@@ -1649,8 +1686,20 @@ select {
         display: none
     }
 
+    .md\:h-7 {
+        height: 1.75rem
+    }
+
+    .md\:min-h-44 {
+        min-height: 11rem
+    }
+
     .md\:min-h-40 {
         min-height: 10rem
+    }
+
+    .md\:w-7 {
+        width: 1.75rem
     }
 
     .md\:w-auto {
@@ -1694,12 +1743,31 @@ select {
         padding-bottom: 6rem
     }
 
+    .md\:px-10 {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem
+    }
+
     .md\:pt-10 {
         padding-top: 2.5rem
     }
 
+    .md\:text-lg {
+        font-size: 1.125rem;
+        line-height: 1.75rem
+    }
+
     .md\:text-5xl {
         font-size: 3rem;
+        line-height: 1
+    }
+
+    .md\:text-base {
+        font-size: 1rem;
+        line-height: 1.5rem
+    }
+
+    .md\:leading-none {
         line-height: 1
     }
 }
@@ -1712,10 +1780,6 @@ select {
 
     .ml\:hidden {
         display: none
-    }
-
-    .ml\:gap-7 {
-        gap: 1.75rem
     }
 
     .ml\:gap-10 {
@@ -1738,6 +1802,18 @@ select {
         display: grid
     }
 
+    .lg\:h-10 {
+        height: 2.5rem
+    }
+
+    .lg\:w-10 {
+        width: 2.5rem
+    }
+
+    .lg\:max-w-4xl {
+        max-width: 56rem
+    }
+
     .lg\:grid-cols-2 {
         grid-template-columns: repeat(2, minmax(0, 1fr))
     }
@@ -1751,6 +1827,11 @@ select {
         padding-right: 1.25rem
     }
 
+    .lg\:px-16 {
+        padding-left: 4rem;
+        padding-right: 4rem
+    }
+
     .lg\:pt-5 {
         padding-top: 1.25rem
     }
@@ -1759,9 +1840,9 @@ select {
         text-align: left
     }
 
-    .lg\:text-base {
-        font-size: 1rem;
-        line-height: 1.5rem
+    .lg\:text-lg {
+        font-size: 1.125rem;
+        line-height: 1.75rem
     }
 
     .lg\:text-6xl {
@@ -1774,9 +1855,14 @@ select {
         line-height: 1.75rem
     }
 
-    .lg\:text-lg {
-        font-size: 1.125rem;
-        line-height: 1.75rem
+    .lg\:text-base {
+        font-size: 1rem;
+        line-height: 1.5rem
+    }
+
+    .lg\:text-2xl {
+        font-size: 1.5rem;
+        line-height: 2rem
     }
 
     .lg\:text-3xl {
@@ -1802,6 +1888,10 @@ select {
         grid-column: span 8 / span 8
     }
 
+    .xl\:h-18 {
+        height: 4.5rem
+    }
+
     .xl\:justify-center {
         justify-content: center
     }
@@ -1812,6 +1902,10 @@ select {
 
     .xl\:gap-20 {
         gap: 5rem
+    }
+
+    .xl\:gap-16 {
+        gap: 4rem
     }
 
     .xl\:gap-12 {
@@ -1833,6 +1927,11 @@ select {
     .xl\:text-6\.5xl {
         font-size: 4rem;
         line-height: 1.10
+    }
+
+    .xl\:text-xl {
+        font-size: 1.25rem;
+        line-height: 1.75rem
     }
 
     .xl\:text-2xl {
@@ -1876,20 +1975,16 @@ select {
         padding: 2.5rem
     }
 
+    .\32xl\:pt-32 {
+        padding-top: 8rem
+    }
+
     .\32xl\:pl-20 {
         padding-left: 5rem
     }
 
     .\32xl\:pr-20 {
         padding-right: 5rem
-    }
-
-    .\32xl\:pt-20 {
-        padding-top: 5rem
-    }
-
-    .\32xl\:pt-32 {
-        padding-top: 8rem
     }
 
     .\32xl\:text-7xl {

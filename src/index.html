@@ -26,11 +26,11 @@
     <!-- Whole Structure -->
     <div class="overflow-hidden min-h-screen">
         <h1 class="sr-only">Davidsons Land</h1>
-        <header class="bg-color-1 fixed w-full z-20 top-0 shadow-2">
+        <header class="bg-color-1 fixed w-full z-40 top-0 shadow-2">
             <nav class="flex-wrap px-4 flex justify-between items-stretch">
                 <div class="md:border-r border-white order-1 md:order-none flex-1 flex justify-center md:flex-none md:justify-start">
                     <a href="javascript:void(0)" class="p-2 xs:p-4 pl-0 inline-block">
-                        <img src="assets/dist/img/logo.svg" alt="Logo Davidson Homes" class="h-12 xs:h-16">
+                        <img src="assets/dist/img/logo.svg" alt="Logo Davidson Homes" class="h-12 xs:h-16 xl:h-18">
                     </a>
                 </div>
                 <div class="flex items-stretch ml:hidden md:flex-1 order-0 md:order-none">
@@ -62,7 +62,7 @@
                         </svg>
                     </button>
                 </div>
-                <div class="order-1 md:order-none flex-1 justify-between xl:justify-center xl:gap-10 2xl:gap-18 items-stretch px-5 text-sm lg:text-base hidden ml:flex">
+                <div class="order-1 md:order-none flex-1 justify-between xl:justify-center xl:gap-10 2xl:gap-18 items-stretch px-5 lg:text-lg hidden ml:flex">
                     <a href="javascript:void(0)" class="flex items-center gap-2 text-white relative group hover:text-white/80">
                         <svg viewBox="0 0 15.98 15.98" class="w-4 " fill="currentColor">
                             <path
@@ -89,7 +89,7 @@
                     </a>
                 </div>
                 <div class="order-1 md:order-none flex gap-1 xs:gap-4 items-center">
-                    <a href="#" class="flex justify-center items-center text-white relative hover:bg-white hover:text-color-1 rounded-full py-1 px-4">
+                    <a href="#" class="flex justify-center items-center text-white relative hover:bg-white hover:text-color-1 rounded-full w-10 h-10 sm:h-auto sm:w-auto sm:py-1 sm:px-4 md:text-lg">
                         <span class="md:inline hidden">Contact us</span>
                         <svg class="w-6 md:hidden" viewBox="0 0 17.96 17.96" fill="currentColor"><path d="M0,14.23V16a2,2,0,0,0,2.07,2A17,17,0,0,0,18,2.07,2,2,0,0,0,16,0H14.23a2,2,0,0,0-2,1.77L12,4.29a2,2,0,0,0,.57,1.64l1.85,1.85a15,15,0,0,1-6.59,6.59L5.94,12.53A2,2,0,0,0,4.3,12l-2.54.29A2,2,0,0,0,0,14.23Z"/></svg>
                     </a>
@@ -101,9 +101,9 @@
                     </a>
                 </div>
                 <!-- Mobile menu, show/hide based on menu state. -->
-                <div class="mobile-menu absolute inset-x-0 top-full text-center bg-color-1 py-4 border-t border-white ml:hidden hidden" id="mobile-menu">
-                    <div class=" flex flex-col ">
-                        <a href="javascript:void(0)" class="flex items-center justify-center py-2 gap-2 text-white relative group hover:text-white/80">
+                <div class="mobile-menu absolute inset-x-0 top-full text-center bg-color-1 text-lg py-4 border-t border-white ml:hidden" id="mobile-menu">
+                    <div class=" flex flex-col sm:flex-row justify-center sm:gap-5 ">
+                        <a href="javascript:void(0)" class="flex items-center justify-center py-2 gap-2 text-white relative group hover:text-white/80 ">
                             <svg viewBox="0 0 15.98 15.98" class="w-4 " fill="currentColor">
                                 <path
                                     d="M16,14.56l-3.92-3.91a6.74,6.74,0,1,0-1.41,1.41L14.56,16ZM2,6.69a4.69,4.69,0,1,1,4.69,4.69A4.69,4.69,0,0,1,2,6.69Z" />
@@ -193,9 +193,12 @@
             <!-- tabs -->
             <section class="bg-color-8 relative">
                 <div class="px-4 md:grid md:grid-cols-12 max-w-screen-3xl mx-auto gap-10 xl:gap-20 transformer-tabs">
+
+                    
                     <div class="md:hidden -mx-4">
-                        <ul class="bg-white divide-y divide-gray-2 shadow-2 font-bold w-full border-t border-b border-gray-200  text-color-13 border-0 text-lg tracking-widest focus:ring-0 outline-none relative">
-                            <li><a href="#tab-1" class="flex justify-center items-center py-5 px-3">Where we buy land</a></li>
+                        <!-- Please add "active class to selected tab "a" tag -->
+                        <ul class="bg-white divide-y divide-gray-2 shadow-2 font-bold w-full border-t border-b border-gray-200  text-color-13 border-0 text-lg tracking-widest focus:ring-0 outline-none relative ">
+                            <li><a href="#tab-1" class="flex justify-center items-center py-5 px-3 active">Where we buy land</a></li>
                             <li><a href="#tab-2" class="flex justify-center items-center py-5 px-3">Case studies</a></li>
                             <li><a href="#tab-3" class="flex justify-center items-center py-5 px-3">Testimonials</a></li>
                             <li><a href="#tab-4" class="flex justify-center items-center py-5 px-3">Meet the Team</a></li>
@@ -205,6 +208,7 @@
                     </div>
                     <div class="col-span-3 xl:col-span-4 hidden md:flex items-start">
                         <div class="flex flex-col 2xl:pt-32 2xl:pl-20 w-72 mx-auto py-10 text-lg font-light text-center justify-center items-start ">
+                            <!-- Please add "active class to selected tab "a" tag -->
                             <ul class="flex flex-col gap-5">
                                 <li class="flex flex-col items-center justify-center gap-5"> <a href="#tab-1" class="px-3 lg:px-5 lg:text-base text-sm w-full rounded-full text-color-4 font-semibold py-2 tracking-wider hover:bg-color-1 hover:border-color-1 border border-color-9 hover:text-white flex justify-center items-center active"><span>Where we buy land</span></a>
                                     <hr class="border-0 border-b border-gray-400 w-10">
@@ -236,15 +240,15 @@
                                         <img class="object-cover" src="assets/dist/img/map-1.png" alt="">
                                       </picture>
                                 </div>
-                                <div class="bg-white shadow-3 p-5 sm:px-10">
-                                    <div class="max-w-5xl mx-auto flex flex-col sm:flex-row gap-5 justify-between py-4">
-                                        <div class="flex items-center gap-4 ml:gap-7">
-                                            <div class="bg-color-5 w-7 h-7 rounded-full"></div>
-                                            <p class="sm:text-lg font-medium text-color-4 leading-tight">Wilson House<br>Leicester Road<br>Ibstock, LE67 6HP</p>
+                                <div class="bg-white shadow-3 py-5 md:px-10 lg:px-16 px-8 mv:px-10 xs:px-16">
+                                    <div class="max-w-3xl lg:max-w-4xl mx-auto flex flex-col md:flex-row gap-10 md:gap-5 justify-between py-4">
+                                        <div class="flex items-center md:gap-5 lg:gap-10 xl:gap-16 gap-8 mv:gap-10 xs:gap-16 ">
+                                            <div class="bg-color-5 md:w-7 md:h-7 lg:w-10 lg:h-10 w-10 h-10 rounded-full"></div>
+                                            <p class="text-lg xs:text-xl md:text-base lg:text-lg xl:text-xl font-semibold text-color-4/80 md:leading-none">Wilson House<br>Leicester Road<br>Ibstock, LE67 6HP</p>
                                         </div>
-                                        <div class="flex items-center gap-4 ml:gap-7">
-                                            <div class="bg-color-6 w-7 h-7 rounded-full"></div>
-                                            <p class="sm:text-lg font-medium text-color-4 leading-tight">Rickyard Barn, Blisworth Hill Farm<br>Stoke Road, Blisworth<br>Northamptonshire, NN7 3DB
+                                        <div class="flex items-center md:gap-5 lg:gap-10 xl:gap-16 gap-8 mv:gap-10 xs:gap-16 ">
+                                            <div class="bg-color-6 md:w-7 md:h-7 lg:w-10 lg:h-10 w-10 h-10 rounded-full"></div>
+                                            <p class="text-lg xs:text-xl md:text-base lg:text-lg xl:text-xl font-semibold text-color-4/80 md:leading-none">Rickyard Barn,<br class="md:hidden"> Blisworth Hill Farm<br>Stoke Road, Blisworth<br>Northamptonshire,<br class="md:hidden"> NN7 3DB
                                             </p>
                                         </div>
                                     </div>
@@ -872,8 +876,8 @@
                 <div class="flex flex-col md:flex-row justify-between gap-5 ml:gap-10 ">
                     <div class="flex flex-col sm:flex-row justify-between gap-5 ml:gap-10 xl:gap-32 ">
                         <div class="relative flex gap-8 flex-col ">
-                            <h3 class="lg:text-xl text-white ">East Midlands Office</h3>
-                            <ul class="flex flex-col gap-2 md:min-h-40 text-sm lg:text-base ">
+                            <h3 class="text-xl lg:text-2xl text-white ">East Midlands Office</h3>
+                            <ul class="flex flex-col gap-2 md:min-h-44 lg:text-lg ">
                                 <li class=" ">
                                     <a href="javascript:void(0) " class="text-white hover:text-white/70 ">
                                         Davidsons Group
@@ -902,8 +906,8 @@
                             </p>
                         </div>
                         <div class="relative flex gap-8 flex-col ">
-                            <h3 class="lg:text-xl text-white ">South Midlands Office</h3>
-                            <ul class="flex flex-col gap-2 md:min-h-40 text-sm lg:text-base ">
+                            <h3 class="text-xl lg:text-2xl text-white ">South Midlands Office</h3>
+                            <ul class="flex flex-col gap-2 md:min-h-44  lg:text-lg ">
                                 <li class=" ">
                                     <a href="javascript:void(0) " class="text-white hover:text-white/70 ">
                                         Davidsons Homes
@@ -940,9 +944,9 @@
                     </div>
                     <div class="flex justify-between gap-10 ">
                         <div class="relative flex gap-8 flex-col ">
-                            <h3 class="lg:text-xl text-white ">Navigation</h3>
+                            <h3 class="text-xl lg:text-2xl text-white ">Navigation</h3>
                             <div class="flex flex-col sm:flex-row gap-10 md:gap-5 ml:gap-10 xl:gap-32 ">
-                                <ul class="flex flex-col gap-2 md:min-h-40 text-sm lg:text-base ">
+                                <ul class="flex flex-col gap-2 md:min-h-40 lg:text-lg ">
                                     <li class=" ">
                                         <a href="javascript:void(0) " class="text-white hover:text-white/70 ">
                                             Home
@@ -979,7 +983,7 @@
                                         </a>
                                     </li>
                                 </ul>
-                                <ul class="flex flex-col gap-2 md:min-h-40 text-sm lg:text-base ">
+                                <ul class="flex flex-col gap-2 md:min-h-40  lg:text-lg">
                                     <li class=" ">
                                         <a href="javascript:void(0) " class="text-white hover:text-white/70 ">
                                             Privacy Policy
@@ -1110,7 +1114,7 @@
 
 // Tabs
 
-        var Tabs = {
+var Tabs = {
             init: function() {
                 this.bindUIfunctions();
                 this.pageLoadCorrectTab();

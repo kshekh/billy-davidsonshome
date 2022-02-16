@@ -13,7 +13,9 @@
 .scrollbar::-webkit-scrollbar-thumb {
     @apply bg-color;
 }
-
+.mobile-menu{
+    @apply hidden;
+}
 .menu-open {
     .barMenu {
         @apply hidden;
@@ -22,10 +24,10 @@
         @apply block;
     }
     .mobile-menu {
-        @media(max-width: 767px) {
+        @media(max-width: 991px) {
             @apply block;
         }
-        @screen md {
+        @screen ml {
             @apply hidden;
         }
     }
@@ -63,9 +65,10 @@
             }
         }
         &:after {
-            content: "☰";
+            content: '';
+            background:url('../img/down-angle.svg') no-repeat; background-size: 20px;
             height: 68px;
-            @apply absolute right-0 top-0 flex justify-center items-center pointer-events-none z-20 w-20 text-xl text-color-13;
+            @apply absolute right-0 top-0 flex justify-center items-center pointer-events-none z-20 w-20 text-xl text-color-13 bg-center transform;
             @screen md {
                 @apply hidden;
             }
@@ -75,10 +78,13 @@
         &.open {
             li {
                 a {
-                    @media (max-width: 767px) {
+                    @media (max-width: 771px) {
                         @apply flex;
                     }
                 }
+            }
+            &:after {
+@apply rotate-180;
             }
         }
     }
