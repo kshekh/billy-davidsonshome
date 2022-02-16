@@ -677,6 +677,10 @@ select {
     margin-right: -1rem
 }
 
+.mr-0 {
+    margin-right: 0px
+}
+
 .block {
     display: block
 }
@@ -821,6 +825,10 @@ select {
 
 .items-start {
     align-items: flex-start
+}
+
+.items-end {
+    align-items: flex-end
 }
 
 .items-center {
@@ -1570,12 +1578,20 @@ select {
         top: -0.75rem
     }
 
+    .xs\:mr-0 {
+        margin-right: 0px
+    }
+
     .xs\:inline {
         display: inline
     }
 
     .xs\:h-16 {
         height: 4rem
+    }
+
+    .xs\:w-auto {
+        width: auto
     }
 
     .xs\:gap-4 {
@@ -1678,6 +1694,11 @@ select {
         grid-column: span 9 / span 9
     }
 
+    .md\:mx-auto {
+        margin-left: auto;
+        margin-right: auto
+    }
+
     .md\:ml-0 {
         margin-left: 0px
     }
@@ -1732,6 +1753,10 @@ select {
 
     .md\:flex-row {
         flex-direction: row
+    }
+
+    .md\:items-center {
+        align-items: center
     }
 
     .md\:justify-start {
@@ -1898,6 +1923,11 @@ select {
 
     .xl\:col-span-8 {
         grid-column: span 8 / span 8
+    }
+
+    .xl\:mx-auto {
+        margin-left: auto;
+        margin-right: auto
     }
 
     .xl\:h-18 {
