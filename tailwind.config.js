@@ -172,54 +172,12 @@ module.exports = {
     plugins: [
         plugin(function({ addBase, components, theme }) {
             addBase({
-                'body': {
-                    backgroundColor: theme('colors.ml-gray.1'),
-                },
-
+               
                 '.trnstsn, a, input, textarea, select': {
                     transition: 'all 0.35s ease-in-out',
 
                 },
-
-                '.filters': {
-                    '.filter-qualiopi': {
-                        display: 'none!important'
-                    },
-                    '&.filters-on': {
-                        '.filter-qualiopi': {
-                            display: 'flex!important'
-                        },
-                        '.filter-btn': {
-                            display: 'none!important'
-                        },
-                        '.filter-training': {
-                            display: 'none!important'
-                        }
-                    }
-                },
-
-
-                'input[type="radio"] + label .c-box': {
-                    transition: 'all 0.35s ease-in-out',
-                },
-
-                // 'input[type="radio"] + label .c-box:hover': {
-                //     transform: 'scale(1.2)'
-                // },
-                // 'input[type="radio"] + label:hover .c-box': {
-                //     transform: 'scale(1.2)'
-                // },
-
-                'input[type="radio"]:checked + label .c-box': {
-                    backgroundColor: theme('colors.ml-blue.1'),
-                    boxShadow: '0px 0px 0px 3px #F0F1FA inset'
-                },
-
-                // 'input[type="radio"]:checked + label': {
-                //     color: '#3490DC' //text-blue
-                // },
-
-
+ 
 
 
 

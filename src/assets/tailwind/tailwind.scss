@@ -50,6 +50,13 @@
 .transformer-tabs {
     ul {
         li {
+            @media (max-width:767px){
+                @apply hidden;
+                &.selected {
+                    @apply block;
+                }  
+            }
+            
             a {
                 @media (max-width: 767px) {
                     @apply hidden;
@@ -76,7 +83,7 @@
     }
     ul {
         &.open {
-            li {
+            li { @apply block;
                 a {
                     @media (max-width: 771px) {
                         @apply flex;

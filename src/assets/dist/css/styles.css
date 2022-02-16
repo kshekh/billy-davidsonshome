@@ -399,8 +399,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
-body {}
-
 .trnstsn, a, input, textarea, select {
     transition: all 0.35s ease-in-out
 }
@@ -1379,6 +1377,16 @@ select {
 .land-select #emidlands:checked ~ .eastMidlands,
     .land-select #smidlands:checked ~ .southMidlands {display: block;}
 
+@media (max-width:767px){
+
+.transformer-tabs ul li {
+        display: none
+    }
+                .transformer-tabs ul li.selected {
+        display: block
+    }  
+            }
+
 @media (max-width: 767px) {
 
 .transformer-tabs ul li a {
@@ -1431,6 +1439,10 @@ select {
         display: none
     }
             }
+
+.transformer-tabs ul.open li {
+    display: block
+}
 
 @media (max-width: 771px) {
 
