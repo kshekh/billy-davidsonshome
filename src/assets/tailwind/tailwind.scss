@@ -32,10 +32,18 @@
 }
 
 .land-select {
-    input[type="radio"]:checked+label {
+    input[type="radio"]#emidlands:checked ~ .land-select-labels label.emidlands-label, input[type="radio"]#smidlands:checked ~ .land-select-labels label.smidlands-label{
         @apply border-color-1 text-color-1
     }
+
+
+    #emidlands:checked ~ .eastMidlands,
+    #smidlands:checked ~ .southMidlands {display: block;}   
+
 }
+
+
+
 
 .transformer-tabs {
     ul {

@@ -1003,10 +1003,6 @@ select {
     background-color: rgb(234 234 234 / var(--tw-bg-opacity))
 }
 
-.bg-white\/40 {
-    background-color: rgb(255 255 255 / 0.4)
-}
-
 .bg-gray-200 {
     --tw-bg-opacity: 1;
     background-color: rgb(229 231 235 / var(--tw-bg-opacity))
@@ -1015,6 +1011,10 @@ select {
 .bg-color-19 {
     --tw-bg-opacity: 1;
     background-color: rgb(59 59 58 / var(--tw-bg-opacity))
+}
+
+.bg-white\/40 {
+    background-color: rgb(255 255 255 / 0.4)
 }
 
 .bg-color-2 {
@@ -1374,12 +1374,15 @@ select {
     }
         }
 
-.land-select input[type="radio"]:checked+label {
+.land-select input[type="radio"]#emidlands:checked ~ .land-select-labels label.emidlands-label, .land-select input[type="radio"]#smidlands:checked ~ .land-select-labels label.smidlands-label {
     --tw-border-opacity: 1;
     border-color: rgb(152 11 44 / var(--tw-border-opacity));
     --tw-text-opacity: 1;
     color: rgb(152 11 44 / var(--tw-text-opacity))
 }
+
+.land-select #emidlands:checked ~ .eastMidlands,
+    .land-select #smidlands:checked ~ .southMidlands {display: block;}
 
 @media (max-width: 767px) {
 
@@ -1879,6 +1882,14 @@ select {
 
     .\32xl\:pr-20 {
         padding-right: 5rem
+    }
+
+    .\32xl\:pt-20 {
+        padding-top: 5rem
+    }
+
+    .\32xl\:pt-32 {
+        padding-top: 8rem
     }
 
     .\32xl\:text-7xl {
